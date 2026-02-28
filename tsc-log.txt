@@ -1,0 +1,9 @@
+src/pages/EngineerDashboard.tsx(2,31): error TS6133: 'Copy' is declared but its value is never read.
+src/pages/EngineerDashboard.tsx(2,70): error TS6133: 'BookOpen' is declared but its value is never read.
+src/pages/Onboarding.tsx(4,44): error TS6133: 'Code' is declared but its value is never read.
+src/pages/Onboarding.tsx(4,50): error TS6133: 'Layout' is declared but its value is never read.
+src/pages/Onboarding.tsx(4,58): error TS6133: 'Database' is declared but its value is never read.
+src/pages/Onboarding.tsx(4,68): error TS6133: 'Terminal' is declared but its value is never read.
+src/pages/SignIn.tsx(2,10): error TS6133: 'Mail' is declared but its value is never read.
+src/pages/SignIn.tsx(2,16): error TS6133: 'Lock' is declared but its value is never read.
+src/pages/SignIn.tsx(3,10): error TS6133: 'Link' is declared but its value is never read.

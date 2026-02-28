@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { User, Mail, Lock, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const FADE_UP = {
     initial: { opacity: 0, y: 30 },
@@ -9,6 +9,13 @@ const FADE_UP = {
 };
 
 export function SignUp() {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        navigate('/onboarding');
+    };
+
     return (
         <div className="pt-32 pb-16 min-h-screen flex items-center justify-center">
             <motion.div
@@ -26,7 +33,7 @@ export function SignUp() {
                         Join the Experience Economy today.
                     </p>
 
-                    <form className="w-full flex flex-col gap-4">
+                    <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
                         <div className="relative">
                             <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                             <input
